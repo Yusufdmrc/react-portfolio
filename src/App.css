@@ -1,0 +1,79 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap");
+
+/* VARIABLES */
+
+:root {
+  /* Colors */
+
+  --first-color: hsl(192, 51%, 41%);
+  --text-color: hsl(0, 0%, 57%);
+  --title-color: hsl(0, 0%, 44%);
+  --body-color: hsl(0, 0%, 100%);
+  --border-color: hsl(0, 0%, 86%);
+  --container-color: hsl(0, 0%, 94%);
+  --text-white: #fff;
+
+  /* Font */
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Poppins", sans-serif;
+
+  --big-size: 56px;
+  --h1-size: 50px;
+  --h2-size: 32px;
+  --h3-size: 24px;
+  --large-size: 18px;
+  --normal-size: 16px;
+  --small-size: 15px;
+  --smaller-size: 14px;
+  --tiny-size: 12px;
+}
+
+/* Base */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-family: var(--second-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
