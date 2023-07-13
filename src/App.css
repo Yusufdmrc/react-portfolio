@@ -77,3 +77,59 @@ textarea {
 img {
   max-width: 100%;
 }
+
+/* CSS */
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.section {
+  padding-block: 70px;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  font-family: var(--second-font);
+  font-size: var(--small-size);
+  font-weight: 500;
+  border: 2px solid var(--first-color);
+  color: var(--title-color);
+  padding: 16px 75px 16px 25px;
+  border-radius: 35px;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+.button:hover {
+  color: var(--text-white);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--first-color);
+  transform: translateX(100%);
+  transition: all 0.5s ease-out;
+  z-index: -1;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
+.button-icon {
+  position: absolute;
+  inset-block: -2px;
+  font-size: var(--large-size);
+  right: 0;
+  width: 55px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  text-align: center;
+  line-height: 60px;
+}
