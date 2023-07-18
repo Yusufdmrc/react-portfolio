@@ -89,6 +89,22 @@ img {
   padding-block: 70px;
 }
 
+.container {
+  max-width: 1140px;
+  margin-inline: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: var(--big-size);
+  margin-bottom: 60px;
+}
+
+.section-title span {
+  color: var(--first-color);
+}
+
 .button {
   position: relative;
   display: inline-block;

@@ -1,0 +1,61 @@
+.about-container,
+.info-list,
+.github-stats {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-list {
+  margin-bottom: 30px;
+  row-gap: 22px;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: var(--h3-size);
+  margin-bottom: 20px;
+}
+
+.info-list .info-title,
+.info-list .info-description {
+  font-size: var(--small-size);
+}
+
+.info-list .info-description {
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.github-stats {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.stats-box {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 25px 35px 25px;
+}
+
+.stats-number {
+  line-height: 1.1;
+  color: var(--first-color);
+  font-size: var(--h1-size);
+}
+
+.stats-title {
+  position: relative;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-size: var(--small-size);
+}
+
+.stats-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 30px;
+  height: 1px;
+  background-color: var(--text-color);
+}

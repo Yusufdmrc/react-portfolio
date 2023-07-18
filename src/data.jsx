@@ -38,7 +38,7 @@ export const links = [
   },
 ];
 
-export const personalInfo = [
+export const info = [
   {
     id: 1,
     title: "First Name : ",
@@ -83,7 +83,7 @@ export const personalInfo = [
 
   {
     id: 8,
-    title: "Email : ",
+    title: "Email:",
     description: "yusuffdemirci10@gmail.com",
   },
 ];
@@ -238,5 +238,28 @@ export const themes = [
     id: 10,
     img: Theme10,
     color: "hsl(42, 100%, 50%)",
+  },
+];
+
+export const githubStats = [
+  {
+    id: 1,
+    number: 178,
+    title: "Total Commits (2023)",
+  },
+  {
+    id: 2,
+    number: 55,
+    title: "Repository",
+  },
+  {
+    id: 3,
+    number: 283,
+    title: "Total Contributions",
+  },
+  {
+    id: 4,
+    number: 48,
+    title: "Stars",
   },
 ];
