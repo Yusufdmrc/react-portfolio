@@ -1,7 +1,9 @@
 .about-container,
 .info-list,
-.github-stats {
+.github-stats,
+.resume-container {
   grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
 }
 
 .info-list {
@@ -58,4 +60,117 @@
   width: 30px;
   height: 1px;
   background-color: var(--text-color);
+}
+
+.divider {
+  border-top: 1px solid var(--border-color);
+  max-width: 45%;
+  margin: 72px auto;
+}
+
+.subtitle-center {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 50px;
+  justify-items: center;
+}
+
+.progress-circle {
+  height: 120px;
+  width: 120px;
+}
+
+.CircularProgressbar-path {
+  stroke: var(--first-color) !important;
+  stroke-linecap: butt !important;
+}
+
+.CircularProgressbar-trail {
+  stroke: var(--container-color) !important;
+}
+
+.CircularProgressbar-text {
+  font-size: var(--large-size);
+  font-family: var(--second-font);
+  fill: var(--title-color) !important;
+}
+
+.skills-title {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  font-family: var(--body-font);
+  font-size: var(--normal-size);
+}
+
+.resume-item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.resume-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  left: 20px;
+  border-left: 1px solid var(--border-color);
+}
+
+.resume-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  color: var(--text-white);
+  background-color: var(--first-color);
+}
+
+.resume-date {
+  font-size: var(--tiny-size);
+  border-radius: 18px;
+  padding: 3px 10px;
+  background-color: var(--container-color);
+  background-color: var(--container-color);
+}
+
+.resume-subtitle {
+  font-size: var(--large-size);
+  font-weight: 500;
+  margin-block: 15px;
+}
+
+.resume-subtitle span {
+  font-size: var(--small-size);
+  font-weight: 600;
+  position: relative;
+  color: var(--text-color);
+  padding-left: 20px;
+  font-family: var(--body-font);
+}
+
+.resume-subtitle span::before {
+  content: "";
+  position: absolute;
+  background-color: var(--text-color);
+  width: 10px;
+  height: 2px;
+  top: 9px;
+  left: 2px;
+}
+
+.resume-description {
+  line-height: 1.2;
+  font-size: var(--smaller-size);
 }

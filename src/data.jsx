@@ -104,7 +104,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: "July 2023 - Present",
     title: "Frotend Developer Intership <span> Arute Solutions </span>",
-    desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
+    desc: "Css,TypeScript,React",
   },
 
   {
